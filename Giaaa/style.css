@@ -1,0 +1,406 @@
+body {
+background-color: rgb(112, 0, 0);
+}
+.div1 {
+  background-color: #000;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flower {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #000;
+  animation: pulsate 2s infinite;
+  border-color: transparent;
+}
+
+.text-above,
+.text-below {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.text-above {
+    top: -60px;
+}
+
+.text-below {
+    bottom: -60px;
+}
+@keyframes pulsate {
+  0% {
+      transform: scale(1.5);
+  }
+  50% {
+      transform: scale(1.6);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+}
+  .mid {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #000, #ff5e00, #000);
+    z-index: 4;
+    background-size: 5px 5px;
+    filter: drop-shadow(0 0 8px #682600);
+  }
+  
+  .Petal1 {
+    position: absolute;
+    left: 40px;
+    z-index: 3;
+    width: 120px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff5e00, #ffbb00);
+    filter: drop-shadow(0 0 5px #e05200);
+  }
+  
+  .Petal1.p1 {
+    transform: rotate(22.5deg);
+  }
+  .Petal1.p2 {
+    transform: rotate(67.5deg);
+  }
+  .Petal1.p3 {
+    transform: rotate(110.5deg);
+  }
+  .Petal1.p4 {
+    transform: rotate(157.5deg);
+  }
+  
+  .Petal2 {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 200px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff5e00, #fbd702);
+    filter: drop-shadow(0 0 5px #e05200);
+  }
+
+  .Petal2.p2 {
+    transform: rotate(90deg);
+  }
+  .Petal2.p3 {
+    transform: rotate(45deg);
+  }
+  
+  .Petal2.p4 {
+    transform: rotate(135deg);
+  }
+  
+  .Petal3 {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    width: 200px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff5e00, #fbd702);
+    filter: drop-shadow(0 0 2px #fbd702);
+  }
+  
+  .Petal3.p1 {
+    transform: rotate(22.5deg);
+  }
+  .Petal3.p2 {
+    transform: rotate(67.5deg);
+  }
+  .Petal3.p3 {
+    transform: rotate(110.5deg);
+  }
+  .Petal3.p4 {
+    transform: rotate(157.5deg);
+  }
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0000);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0000);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0000);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0000);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0000);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0101);
+    z-index: -5;
+    transition: all .8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -60%;
+    left: -100%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 15px #ff0000);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: 25%;
+    left: -50%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 15px #ff0000);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 125%;
+    left: -170%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 15px #ff0000);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 130%;
+    left: 110%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 15px #ff0000);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 30%;
+    left: 195%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 15px #ff0000);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: -25%;
+    left: 120%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 15px #ff0000);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fd1853
+  }
+
+  button:hover .text-above {
+    top: -60px;
+    color: greenyellow;
+    filter: drop-shadow(0 0 15px #09ff00);
+}
+
+  button:hover .text-below {
+    bottom: -60px;
+    color: greenyellow;
+    filter: drop-shadow(0 0 15px #09ff00);
+}
+
+button:hover .Petal3 {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff5e00, #fbd702);
+  filter: drop-shadow(0 0 7px #4fc325);
+}
+
+.div2 {
+  color: rgb(205, 205, 0);
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 17px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  margin: 0;
+  padding: 25px;
+  height: 47vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bri-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 yellow);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.bri-2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 yellow);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.bri-3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 yellow);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.bri-4 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 yellow);
+  z-index: -5;
+  transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.bri-5 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 yellow);
+  z-index: -5;
+  transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+button:hover .bri-1 {
+  position: absolute;
+  top: -60%;
+  left: 200%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px yellow);
+  z-index: 2;
+}
+
+button:hover .bri-2 {
+  position: absolute;
+  top: 25%;
+  left: 150%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px yellow);
+  z-index: 2;
+}
+
+button:hover .bri-3 {
+  position: absolute;
+  top: 25%;
+  left: -130%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px yellow);
+  z-index: 2;
+}
+
+button:hover .bri-4 {
+  position: absolute;
+  top: 130%;
+  left: -40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px yellow);
+  z-index: 2;
+}
+
+button:hover .bri-5 {
+  position: absolute;
+  top: 110%;
+  left: 200%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px yellow);
+  z-index: 2;
+}
